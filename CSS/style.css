@@ -10,7 +10,7 @@ body {
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 1px;
     font-size: 16px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(233, 233, 233);
 }
 
 /* Botón/componentes reutilizables */
@@ -92,14 +92,13 @@ header {
 .hero {
     background: url(../img/hero.jpeg);
     background-size: cover;
-    width: 100%;
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 800px;
     background-repeat: no-repeat;
     color: white;
-    padding: 10px;
     -webkit-box-shadow: -1px 14px 5px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 14px 5px -6px rgba(0,0,0,0.75);
     box-shadow: -1px 14px 5px -6px rgba(0,0,0,0.75);
@@ -115,7 +114,8 @@ header {
     padding: 20px;
     letter-spacing: 1px;
     margin: 0 0 70px 20px;
-    border-radius: 5%;
+    border-radius: 10%;
+    border: 1px solid #084285;
     box-shadow: 0 0 10px 0 #084285;
 }
 
@@ -170,13 +170,17 @@ h1 {
     width: 150px;
     height: 150px;
     border-radius: 100%;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
 }
 
 /* CARDS */
 
 .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 60px;
 }
 
 .cards__item__text {
@@ -187,8 +191,6 @@ h1 {
 .cards div a img {
     width: 180px;
     height: 240px;
-    margin-right: 20px;
-    margin-bottom: 10px;
 }
 
 .cards h2 {
@@ -241,16 +243,18 @@ h1 {
     color: white;
     background-color: #032853;
     display: flex;
-    gap: 50px;   
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;   
 }
 
 
 .footer-info {
     margin-top: 10px;
-    gap: 200px;
-    padding: 50px;
+    gap: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
 }
 
@@ -265,7 +269,7 @@ h1 {
 }
 
 .footer-info ul li {
-    padding: 5px;
+    padding: 8px;
     list-style: none;
 }
 
@@ -275,24 +279,24 @@ h1 {
 }
 
 .footer-logo {
-    width: 150px;
-    height: 150px;
+    width: 40%;
+    height: 40%;
     background-color: #032853;
-    padding-left: 30px;
-    padding-top: 25px;
+    padding-top: 20px;
 }
-
+.social{
+    width: 300px;
+}
 .social div a img {
-    margin: 20px 0 10px;
-    width: 20px;
+    margin: 10px 0px;
+    padding: 5px;
+    width: 30px;
     text-align: center;
-    margin-left: 15px;
 }
 
 .social div a{
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
+    font-size: 40px;
+    text-align: left;
     text-decoration: none;
     color: white;
 }
@@ -300,10 +304,11 @@ h1 {
 .social h3 {
     margin-top: 20px;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: left;
 }
 
 .footer h4 {
+    margin-top: 20px;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -398,16 +403,21 @@ h1 {
 .contact-us {
     background: url(../img/contacto.jpeg);
     background-size: cover;
+    width: 100%;
     height: 500px;
     background-repeat: no-repeat;
     color: white;
-    padding: 10px;
-    box-shadow: 0 0 10px 0 #084285;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 10px 17px 8px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 17px 8px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 17px 8px -10px rgba(0,0,0,0.75);
 }
 
 .accesibilidad {
     display: flex;
     justify-content: space-between;
+    margin: 10px;
 }
 
 .accesibilidad h3 {
@@ -415,7 +425,7 @@ h1 {
 }
 
 .info {
-    margin: 30px;
+    margin: 10px;
     width: 250px;
     height: 250px;
     text-align: center;
@@ -425,12 +435,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 3px 0 #032853;
+    -webkit-box-shadow: 15px 13px 9px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 13px 9px -7px rgba(0,0,0,0.75);
+    box-shadow: 15px 13px 9px -7px rgba(0,0,0,0.75);
 }
 
 .info:hover {
     background-color: #032853;
-    box-shadow: 4px 4px 6px 0 #032853;
+    -webkit-box-shadow: 17px 17px 10px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 17px 10px -10px rgba(0,0,0,0.75);
+    box-shadow: 17px 17px 10px -10px rgba(0,0,0,0.75);
 }
 
 .accesibilidad div #rrss {
@@ -443,17 +457,21 @@ h1 {
 
 .container {
     display: flex;
+    justify-content: space-around;
+    margin: 20px 5px 5px 5px;
 }
 
 .formulario {
     background-color: #084285;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     color: white;
-    margin: 0 auto;
-    width: 600px;
+    width: 45%;
     height: 450px;
-    box-shadow: 2px 2px 3px 0 #032853;
+    -webkit-box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
+    box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
 }
 
 .formulario h3 {
@@ -466,9 +484,6 @@ h1 {
     margin-left: 30px;
 } 
 
-.formulario input {
-    margin: 40px;
-}
 
 .formulario a {
     align-self: flex-end;
@@ -476,8 +491,10 @@ h1 {
 }
 
 .mapa {
-    margin-left: 20px;
-    box-shadow: 2px 2px 3px 0px #032853;
+    width: 45%;
+    -webkit-box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
+    box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
 }
 
 .formulario a:hover{
@@ -506,13 +523,13 @@ h1 {
 }
 
 .platos__receta {
-    width: 550px;
+    width: 45%;
     height: 850px;
     color: white;
     border-radius: 10%;
-    -webkit-box-shadow: 31px 26px 15px -4px rgba(0,0,0,0.66);
-    -moz-box-shadow: 31px 26px 15px -4px rgba(0,0,0,0.66);
-    box-shadow: 31px 26px 15px -4px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 22px 18px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 22px 18px 12px -4px rgba(0,0,0,0.75);
+    box-shadow: 22px 18px 12px -4px rgba(0,0,0,0.75);
 }
 
 .platos__receta li {
@@ -539,25 +556,33 @@ h1 {
 
                                         /* HTML HISTORIA */
 
+.historia1 div img, .historia2 div img, .historia3 div img{
+    display: none;
+}
+
 .historia1 {
 background: url(../img/historia1.jpg);
 background-size: cover;
-height: 400px;
+height: auto;
 background-repeat: no-repeat;
 color: white;
-box-shadow: 15px 0px 15px 5px #0b1a2c;
+-webkit-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
+box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
 margin-bottom: 40px;
 }
 
 .historia1 div {
     width: 30%;
     background-color: #032853;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    box-shadow: 15px 0px 15px 5px #0b1a2c;   
+    -webkit-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+    box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
 }
 
 .historia1 h2 , .historia1 p{
@@ -572,24 +597,28 @@ margin-bottom: 40px;
     background: url(../img/historia2.jpeg);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: auto;
     display: flex;
     justify-content: flex-end;
     background-repeat: no-repeat;
     color: white;
-    box-shadow: 15px 0px 15px 5px #0b1a2c;
+    -webkit-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
+    box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
     margin-bottom: 40px;
     }
     
 .historia2 div {
     width: 30%;
     background-color: #032853;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    box-shadow: -15px 1px 15px 5px #0b1a2c;
+    -webkit-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+    box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
 }
     
 .historia2 h2 , .historia2 p{
@@ -603,21 +632,25 @@ margin-bottom: 40px;
 .historia3 {
     background: url(../img/historia3.jpeg);
     background-size: cover;
-    height: 400px;
+    height: auto;
     background-repeat: no-repeat;
     color: white;
-    box-shadow: 15px 0px 15px 5px #0b1a2c;
+    -webkit-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
+    box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
 }
         
 .historia3 div {
     width: 30%;
     background-color: #032853;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    box-shadow: 15px 0px 15px 5px #0b1a2c;   
+    -webkit-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+    box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
 }
         
 .historia3 h2 , .historia3 p{
@@ -626,7 +659,7 @@ margin-bottom: 40px;
     line-height: 25px;
 }
 
-/*!------------------------------RESPONSIVE-----------------------------*/
+/*------------------------------RESPONSIVE-----------------------------*/
 
 @media screen and (max-width:1030px) {
     /*FOOTER*/
@@ -636,13 +669,18 @@ margin-bottom: 40px;
         text-align: center;
         gap: 0;
     }
+    .social h3{
+        text-align: center;
+    }
     .footer-info{
         gap: 25px;
+        width: 100vw;
+        justify-content: space-around;
     }
     /*HTML INDEX*/
     .productos-estrella{
         grid-template-columns: repeat(2, 1fr);
-        width: calc(100% - 20px);
+        width: 100%
     }
     .productos-estrella__item{
         display: flex;
@@ -650,35 +688,17 @@ margin-bottom: 40px;
         justify-content: center;
         align-items: center;
         margin: 20px;
-        width: calc(100% - 20px);
+        width: 40vw;
         height: 250px;
         padding: 10px;
-        -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-        -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-        box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
     }
-    .productos-estrella__item img{
-        display: none;
-    }
-    .productos-estrella__item:nth-child(1){
-        background-image: url(../img/camaron.jpg);
-        background-size: cover;
-    }
-    .productos-estrella__item:nth-child(2){
-        background-image: url(../img/ostiones.jpg);
-        background-size: cover;
-    }
-    .productos-estrella__item:nth-child(3){
-        background-image: url(../img/reineta.jpg);
-        background-size: cover;
-    }
-    .productos-estrella__item:nth-child(4){
-        background-image: url(../img/salmoncongelado.jpg);
-        background-size: cover;
+    .cards{
+        width:100%;
+        justify-content: space-around;
     }
     .cards__item{
-
-        width: calc(100%-50px);
+        margin: 20px;
+        width: 40%;
         height: 500px;
         -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
         -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
@@ -707,25 +727,36 @@ margin-bottom: 40px;
 
     /*HTML PRODUCTOS*/
     .cards-products{
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: space-evenly;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
         row-gap: 60px;
     }
-    .cards-products__item{
-        width: 150px;
-        height: 300px;
-        font-size: 0.8em;
-    }
-    .cards-products__item img{
-        width: 120px;
-        height: 120px;
-    }
     .banner{
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    /*RECETAS*/
+    .platos{
+        flex-direction: column;
+    }
+    .platos__receta{
+        width: 90%;
+        height: auto;
+        margin: 50px;
     }
 }
 
 @media screen and (max-width:880px) {
+    .contact-us{
+        height: 300px;
+    }
+    .nav-bar{
+        padding: 10px;
+        align-items: center;
+    }
+    .nav-bar li{
+        padding: 5px;
+    }
     .hero{
         width: 100vw;
     }
@@ -733,14 +764,34 @@ margin-bottom: 40px;
         width: 300px;
         height: 200px;
         justify-content: space-evenly;
-        -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-        -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-        box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
     }
     .cards{
         flex-direction: row;
     }
-
+    .footer{
+        margin-top: 50px;
+    }
+    /*HISTORIA*/
+    .historia1 div img, .historia2 div img, .historia3 div img{
+        display: block;
+    }
+    .historia1, .historia2, .historia3{
+        background:none;
+        flex-direction: column;
+    }
+    .historia1 div, .historia2 div, .historia3 div{
+        width: 100%;
+    }
+    .historia1 h2, .historia1 p, .historia2 h2, .historia2 p, .historia3 h2, .historia3 p{
+        text-align: center;
+    }
+    .formulario{
+        text-align: center;
+    }
+    .formulario label{
+        display: block;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:690px) {
@@ -750,12 +801,12 @@ margin-bottom: 40px;
         height: 240px;
     }
     .hero{
-        width: 100vw;
+        width:calc(100%-10px);
         height: auto;
         align-items: center;
     }
     .hero div{
-        margin: 0 0 0px 0px;
+        margin: 0 0 10px 0;
     }
     .logo{
         align-self: center;
@@ -778,48 +829,65 @@ margin-bottom: 40px;
         -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
         box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
     }
-    /*HTML PRODUCTOS*/
-    .cards-products__item {
-        width: 200px;
-        height: 370px;
-        color: #084285;
-        box-shadow: 5px 5px 10px 0 #084285;
-        border-radius: 5%;
-        overflow: hidden;
+    .productos-estrella__item img{
+        display: none;
     }
-    .cards-products__item img {
-        width: 150PX;
-        height: 150px;
-        margin-top: 10px;
+    .productos-estrella__item:nth-child(1){
+        background-image: url(../img/camaron.jpg);
+        background-size: cover;
     }
-    
-    
-    .cards-products__item a {
-        padding: 10px;
-        margin: 10px 40px;
+    .productos-estrella__item:nth-child(2){
+        background-image: url(../img/ostiones.jpg);
+        background-size: cover;
     }
-    
-    
-    .cards-products__item p {
-        font-size: 15px;
-        letter-spacing: 0;
-        margin: 5px 10px 15px 10px;
+    .productos-estrella__item:nth-child(3){
+        background-image: url(../img/reineta.jpg);
+        background-size: cover;
     }
-    
-    /*HTML RECETAS*/
-    .platos{
+    .productos-estrella__item:nth-child(4){
+        background-image: url(../img/salmoncongelado.jpg);
+        background-size: cover;
+    }
+    .cards{
+        width: 100%;
+        justify-content: space-between;
         flex-direction: column;
         align-items: center;
     }
-    .platos__receta{
-        width: 500px;
-        height: 800px;
-        border: none;
+    .cards__item{
+        width: 70%;
+        height: 400px;
+        justify-content: space-around;
         -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
         -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
         box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
     }
+    /*HTML PRODUCTOS*/
+    .cards-products{
+        grid-template-columns: 1fr;
+    }
+    /*CONTACTO*/
+    .info{
+        width: 80%;
+        height: 180px;
+    }
+    .accesibilidad {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapa{
+        width: 80%;
+        margin: 20px 0;
+    }
+    .formulario{
+        width: 80%;
+    }
 }
+
 
 @media screen and (max-width:480px) {
     /*NAV*/
@@ -887,4 +955,15 @@ margin-bottom: 40px;
         flex-direction: column;
         gap: 50px;
     }
+    /*RECETAS*/
+    .platos__receta:nth-child(1), .platos__receta:nth-child(2){
+        background: #ffffff;
+        color:#032853;
+        border: 1px solid #032853;
+        -webkit-box-shadow: 10px 10px 8px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 8px -5px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 8px -5px rgba(0,0,0,0.75);   
+    }
+    .platos__receta h2:nth-child(1), .platos__receta h2:nth-child(2)
+    {padding-bottom: 10px;}
 }
