@@ -6,10 +6,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
+html{
+    font-size: 62,5%;
+}
+
 body {
     font-family: 'Fjalla One', sans-serif;
-    letter-spacing: 1px;
-    font-size: 16px;
     background-color: rgb(233, 233, 233);
 }
 
@@ -23,7 +25,8 @@ body {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
-    letter-spacing: 3px;
+    width: 140px;
+    letter-spacing: 1px;
     color: white;
     background-color: #4F8FD7;
     box-shadow: 2px 3px 3px 0 #084285;
@@ -47,14 +50,15 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .nav {
-    width: calc(100%-20px);
+    width: 100%;
     display: flex;
-    padding: 10px;
+    padding: 10px 0;
     background: #2473cd;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0 0 10px 0 #084285;
 }
 
@@ -66,6 +70,7 @@ header {
 .logo {
     width: 100px;
     height: 100px;
+    margin-left: 15px;
     background: #2473cd;
     border-radius: 50%;
 }
@@ -81,10 +86,14 @@ header {
     padding: 10px;
     color: white;
     font-size: 1.5em;
+    transition-property: font-size, padding;
+    transition-duration: 0.5s;
 }
 
 .nav-bar li:hover {
-    border: outset;
+    font-size: 30px;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 /*HERO*/
@@ -107,10 +116,10 @@ header {
 .hero div {
     display: flex;
     flex-direction: column;
-    font-size: 1em;
+    font-size: 1rem;
     height: 270px;
     width: 350px;
-    background-color: #004a9e80;
+    background-color: #08428598;
     padding: 20px;
     letter-spacing: 1px;
     margin: 0 0 70px 20px;
@@ -133,12 +142,14 @@ header {
 }
 
 h1 {
-    font-size: 35px;
+    border: 2px solid #08428598;
+    background-color: #08428598;
+    font-size: 30px;
     text-align: center;
     justify-self: center;
-    font-style: oblique;
-    color: #084285;
+    color: #ffffff;
     margin-top: 30px;
+    padding: 15px;
     margin-bottom: 30px;
 }
 
@@ -159,9 +170,10 @@ h1 {
 }
 
 .items h2 {
-
+    border: 2px solid #08428598;
+    background-color: #08428598;
     margin: 40px 0;
-    color: #2473cd;
+    color:#ffffff;
     text-align: center;
 }
 
@@ -216,13 +228,14 @@ h1 {
     padding: 10px;
     background-color: white;
     color: #084285;
+    transition: all .4s;
     -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
     -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
     box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
 }
 
 .cards__item:hover {
-    box-shadow: 4px 4px 7px 0 #084285;
+    transform: scale(1.1);
 }
 
 .wsp {
@@ -344,6 +357,7 @@ h1 {
 }
 
 .cards-products__item {
+    transition: all .2s;
     background-color: white;
     width: 250px;
     height: 450px;
@@ -372,6 +386,9 @@ h1 {
 
 .cards-products__item {
     box-shadow: 4px 4px 7px 0 #084285;
+}
+.cards-products__item:hover{
+    transform: scale(1.05);
 }
 
 /* BANNER */
@@ -435,6 +452,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .4s;
     -webkit-box-shadow: 15px 13px 9px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 15px 13px 9px -7px rgba(0,0,0,0.75);
     box-shadow: 15px 13px 9px -7px rgba(0,0,0,0.75);
@@ -442,6 +460,7 @@ h1 {
 
 .info:hover {
     background-color: #032853;
+    transform: scale(1.1);
     -webkit-box-shadow: 17px 17px 10px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 17px 17px 10px -10px rgba(0,0,0,0.75);
     box-shadow: 17px 17px 10px -10px rgba(0,0,0,0.75);
@@ -495,11 +514,6 @@ h1 {
     -webkit-box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
     box-shadow: 19px 18px 7px -7px rgba(0,0,0,0.75);
-}
-
-.formulario a:hover{
-    border: outset;
-    
 }
 
                                             /* HTML RECETAS */
@@ -562,6 +576,9 @@ h1 {
 
 .historia1 {
 background: url(../img/historia1.jpg);
+}
+
+.historia{
 background-size: cover;
 height: auto;
 background-repeat: no-repeat;
@@ -570,9 +587,13 @@ color: white;
 -moz-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
 box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
 margin-bottom: 40px;
+transition: all .4s;
+}
+.historia:hover{
+    transform: scale(1.03);
 }
 
-.historia1 div {
+.historia1 div, .historia2 div, .historia3 div {
     width: 30%;
     background-color: #032853;
     height: auto;
@@ -595,32 +616,7 @@ margin-bottom: 40px;
 
 .historia2 {
     background: url(../img/historia2.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-    background-repeat: no-repeat;
-    color: white;
-    -webkit-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
-    box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
-    margin-bottom: 40px;
     }
-    
-.historia2 div {
-    width: 30%;
-    background-color: #032853;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    -webkit-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
-    box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
-}
-    
 .historia2 h2 , .historia2 p{
     text-align: right;
     margin: 10px 30px 10px 30px;
@@ -631,26 +627,6 @@ margin-bottom: 40px;
 
 .historia3 {
     background: url(../img/historia3.jpeg);
-    background-size: cover;
-    height: auto;
-    background-repeat: no-repeat;
-    color: white;
-    -webkit-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
-    box-shadow: 16px 14px 8px -5px rgba(0,0,0,0.75);
-}
-        
-.historia3 div {
-    width: 30%;
-    background-color: #032853;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    -webkit-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
-    box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
 }
         
 .historia3 h2 , .historia3 p{
