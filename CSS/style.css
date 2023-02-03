@@ -48,12 +48,34 @@ nav div a img{
     width: 80px;
     height: 80px;
 }
-nav div a p{
-    text-align: center;
+
+.navbar{
+    background-color: #4F8FD7;
 }
 
-nav div a {
+.navbar button{
+    background-color: #ffffff;
+}
+
+.nav-link{
+    color: #ffffff;
     font-size: 1.6rem;
+}
+
+.dropdown-item{
+    color: #ffffff;
+}
+
+.hamburguesa{
+    background-image: url(../img/list.svg);
+    color: #2473cd;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dropdown-menu{
+    background-color: #4F8FD7;
 }
 
 /* header {
@@ -342,6 +364,22 @@ h1 {
 
 /* CARDS-PRODUCTS */
 
+.carousel-item img{
+    max-width: 900px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.carousel-caption{
+    width: 60%;
+    height: 20%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+}
+
 .products {
     background: url(../img/sea.jpeg);
     background-repeat: no-repeat;
@@ -518,6 +556,9 @@ h1 {
 .formulario a {
     align-self: flex-end;
     margin: 0 20px 20px 0;
+}
+.formulario a:hover{
+    background-color: #032853;
 }
 
 .mapa {

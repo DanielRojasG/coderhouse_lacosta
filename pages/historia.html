@@ -10,7 +10,45 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/brand1.png" alt="">
+                </a>
+                <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/productos.html">Camarones</a></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html">Reineta</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html">Muchísimo Mas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="nav">
             <img class=logo src="../img/brand3.png" alt="fish-logo">
             <ul class="nav-bar">
                 <li><a href="../index.html">Inicio</a></li>
@@ -19,7 +57,7 @@
                 <li><a href="./historia.html">Historia</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <h1>No tenemos una historia larga, pero si muy interesante...</h1>
