@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+header nav div button, main .hero, .products, .history .section, .recetas .platos .platos__receta .platos__receta1, .recetas .platos .platos__receta .platos__receta2, .contact-us {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+main .items .productos-estrella .productos-estrella__item img, main .cards .cards__item, .history .section, .recetas .platos .platos__receta, .contact-us, .accesibilidad .info, .accesibilidad .info:hover, .container .mapa, .container .formulario {
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62,5%; }
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #e6e6e6; }
+
+h1 {
+  border: 2px solid #032853;
+  background-color: #03285398;
+  font-size: 30px;
+  text-align: center;
+  justify-self: center;
+  color: white;
+  margin-top: 30px;
+  padding: 15px;
+  margin-bottom: 30px; }
+
+.button {
+  display: block;
+  margin: 20px 10px;
+  padding: 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  width: 140px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #4F8FD7;
+  box-shadow: 2px 3px 3px 0 #084285;
+  transition: all .2s; }
+  .button:hover {
+    color: white;
+    background-color: #084285;
+    box-shadow: 2px 3px 3px 0 #2473cd;
+    transform: translateY(-5px); }
+
+.wsp {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
+  .wsp a img {
+    width: 70px; }
+
+header nav {
+  background-color: #4F8FD7; }
+  header nav div a img {
+    width: 80px;
+    height: 80px; }
+  header nav div button {
+    background-color: white;
+    background-image: url(../img/list.svg);
+    color: #2473cd; }
+  header nav div div ul .nav-item .nav-link {
+    color: white;
+    font-size: 1.6rem; }
+  header nav div div ul .nav-item ul {
+    background-color: #4F8FD7; }
+    header nav div div ul .nav-item ul li a {
+      color: white; }
+
+main .hero {
+  background: url(../img/hero.jpeg);
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 800px;
+  color: white; }
+  main .hero div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    height: 300px;
+    width: 350px;
+    background-color: #03285398;
+    padding: 20px;
+    letter-spacing: 1px;
+    margin: 0 0 30px 20px;
+    border-radius: 10%;
+    border: 1px solid #084285;
+    box-shadow: 0 0 10px 0 #084285; }
+    main .hero div h2 {
+      margin-bottom: 10px; }
+    main .hero div a {
+      align-self: flex-end; }
+      main .hero div a:hover {
+        background-color: #084285; }
+
+main .items h2 {
+  border: 2px solid #03285398;
+  background-color: #03285398;
+  margin: 40px 0;
+  color: white;
+  text-align: center; }
+
+main .items .productos-estrella .productos-estrella__item img {
+  align-self: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; }
+
+main .cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 60px; }
+  main .cards .cards__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    background-color: white;
+    color: #084285;
+    transition: all .4s; }
+    main .cards .cards__item:hover {
+      transform: scale(1.05); }
+    main .cards .cards__item a {
+      text-decoration: none;
+      color: #084285;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .cards .cards__item a .cards__item__text {
+        margin-bottom: 10px;
+        padding: 10px; }
+        main .cards .cards__item a .cards__item__text h2 {
+          text-align: center;
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+          margin-top: 10px; }
+      main .cards .cards__item a .cards__item__div img {
+        width: 180px;
+        height: 240px; }
+
+.products {
+  background: url(../img/sea.jpeg); }
+  .products main .carousel-item img {
+    max-width: 900px;
+    width: 80%;
+    height: auto;
+    margin: auto; }
+  .products main .carousel-item div {
+    width: 60%;
+    height: 20%;
+    margin: auto;
+    border: 1px solid #084285;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10px; }
+  .products main .banner {
+    display: flex;
+    padding: 20px;
+    margin: 30px 0;
+    width: 100%;
+    height: 200px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: #084285;
+    font-size: 2em;
+    color: white;
+    box-shadow: 5px 5px 10px 0 #084285; }
+    .products main .banner h2 {
+      display: center;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 5px; }
+  .products main .cards-products {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 40px;
+    row-gap: 50px;
+    text-align: center; }
+    .products main .cards-products .cards-products__item {
+      transition: all .2s;
+      background-color: white;
+      width: 250px;
+      height: 450px;
+      color: #084285;
+      box-shadow: 5px 5px 10px 0 #084285;
+      border-radius: 5%;
+      overflow: hidden; }
+      .products main .cards-products .cards-products__item:hover {
+        transform: scale(1.05); }
+      .products main .cards-products .cards-products__item h3 {
+        background-color: #084285;
+        color: white;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 3px 0 #084285; }
+      .products main .cards-products .cards-products__item img {
+        width: 200px;
+        height: 200px;
+        margin-top: 10px; }
+      .products main .cards-products .cards-products__item p {
+        margin: 10px; }
+      .products main .cards-products .cards-products__item a {
+        padding: 20px;
+        margin: 10px 60px; }
+
+.history .section {
+  height: auto;
+  color: white;
+  margin-bottom: 40px;
+  transition: all .4s; }
+  .history .section:hover {
+    transform: scale(1.03); }
+  .history .section div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #032853;
+    height: auto;
+    flex-direction: column;
+    -webkit-box-shadow: 16px 3px 8px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 16px 3px 8px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 16px 3px 8px -6px rgba(0, 0, 0, 0.75); }
+
+.historia1 img {
+  background: url(../img/historia1.jpg); }
+
+.historia1 h2, .historia1 p {
+  text-align: left;
+  margin: 10px 30px 10px 30px;
+  line-height: 25px; }
+
+.historia2 img {
+  background: url(../img/historia2.jpeg); }
+
+.historia2 h2, .historia2 p {
+  text-align: right;
+  margin: 10px 30px 10px 30px;
+  line-height: 25px; }
+
+.historia3 img {
+  background: url(../img/historia3.jpeg); }
+
+.historia3 h2, .historia3 p {
+  text-align: left;
+  margin: 10px 30px 10px 30px;
+  line-height: 25px; }
+
+.recetas .platos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .recetas .platos .platos__receta {
+    width: 45%;
+    height: 850px;
+    color: white;
+    border-radius: 10%; }
+    .recetas .platos .platos__receta .platos__receta1 {
+      background: url(../img/paila-marina.jpg); }
+    .recetas .platos .platos__receta .platos__receta2 {
+      background: url(../img/ceviche.jpeg); }
+    .recetas .platos .platos__receta ul li {
+      padding: 2px;
+      list-style: none;
+      margin: 0 0 15px 15px; }
+      .recetas .platos .platos__receta ul li span {
+        font-weight: bold; }
+    .recetas .platos .platos__receta h3 {
+      padding-top: 15px;
+      text-align: center; }
+    .recetas .platos .platos__receta p {
+      letter-spacing: 1px;
+      line-height: 30px;
+      margin: 0 15px 15px 15px;
+      padding: 10px; }
+
+.contact-us {
+  background: url(../img/contacto.jpeg);
+  width: 100%;
+  height: 500px;
+  color: white;
+  padding-top: 10px;
+  margin-bottom: 20px; }
+
+.accesibilidad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px; }
+  .accesibilidad .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    color: white;
+    background-color: #084285;
+    flex-direction: column;
+    transition: all .4s; }
+    .accesibilidad .info:hover {
+      background-color: #032853;
+      transform: scale(1.1); }
+    .accesibilidad .info h3 {
+      margin: 20px; }
+    .accesibilidad .info .rrss {
+      display: inline-block; }
+      .accesibilidad .info .rrss img {
+        width: 20px; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 5px 5px 5px; }
+  .container .mapa {
+    width: 45%; }
+  .container .formulario {
+    background-color: #032853;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 45%;
+    height: 450px; }
+    .container .formulario h3 {
+      margin-top: 20px;
+      letter-spacing: 1.5px;
+      text-align: center; }
+    .container .formulario div label {
+      margin-left: 30px; }
+  .container a {
+    align-self: flex-end;
+    margin: 0 20px 20px 0; }
+    .container a:hover {
+      background-color: #032853; }
+
+.footer {
+  margin-top: 100px;
+  height: 320px;
+  color: colores;
+  background-color: #032853;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px; }
+  .footer .social {
+    width: 300px; }
+    .footer .social .footer-logo {
+      width: 40%;
+      height: 40%;
+      background-color: #032853;
+      padding-top: 20px; }
+    .footer .social div h3 {
+      margin-top: 20px;
+      letter-spacing: 1px;
+      text-align: left; }
+    .footer .social div a {
+      font-size: 40px;
+      text-align: left;
+      text-decoration: none;
+      color: white; }
+      .footer .social div a img {
+        margin: 10px 0px;
+        padding: 5px;
+        width: 30px;
+        text-align: center; }
+  .footer div .footer-info {
+    margin-top: 10px;
+    gap: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .footer div .footer-info ul h4 {
+      margin-bottom: 10px;
+      letter-spacing: 2px; }
+    .footer div .footer-info ul a {
+      text-decoration: none;
+      color: white; }
+      .footer div .footer-info ul a li {
+        padding: 8px;
+        list-style: none; }
+        .footer div .footer-info ul a li:hover {
+          text-decoration: underline #4F8FD7;
+          color: #4F8FD7; }
+  .footer div .legal {
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 2px; }

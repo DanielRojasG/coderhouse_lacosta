@@ -1,0 +1,67 @@
+.footer{
+    margin-top: 100px;
+    height: 320px;
+    color: nth(colores, 1);
+    background-color: nth($colores, 7);
+    @include flex(flex, space-evenly, center);
+    gap: 40px;   
+    .social{
+        width: 300px;
+        .footer-logo{
+            width: 40%;
+            height: 40%;
+            background-color: nth($colores, 7);
+            padding-top: 20px;
+        }
+        div{
+            h3{
+                margin-top: 20px;
+                letter-spacing: 1px;
+                text-align: left;
+            }
+            a{
+                font-size: 40px;
+                text-align: left;
+                text-decoration: none;
+                color: nth($colores, 1);
+                img{
+                    margin: 10px 0px;
+                    padding: 5px;
+                    width: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    div{
+        .footer-info{
+            margin-top: 10px;
+            gap: 100px;
+            width: 100%;
+            @include flex(flex, space-around, center);
+            ul{
+                h4{
+                    margin-bottom: 10px;
+                    letter-spacing: 2px;
+                }
+                a{
+                    text-decoration: none;
+                    color: nth($colores, 1);
+                    li{
+                        padding: 8px;
+                        list-style: none;
+                        &:hover{
+                            text-decoration: underline nth($colores, 3);
+                            color: nth($colores, 3);
+                        }
+                    }
+                }
+            }
+        }
+        .legal{
+            margin-top: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+    }
+}

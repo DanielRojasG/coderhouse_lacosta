@@ -1,0 +1,36 @@
+//* VARIABLES
+
+
+//*LISTAS
+$colores:
+white,
+rgb(230, 230, 230),
+#4F8FD7,
+#2473cd,
+#084285,
+#03285398,
+#032853,
+black,
+rgba(0, 0, 0, 0.507);
+
+//* EXTENDS
+
+%bg-img-properties{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+%shadow{
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+}
+
+//* MIXINS
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

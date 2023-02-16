@@ -1,0 +1,74 @@
+.contact-us{
+    background: url(../img/contacto.jpeg);
+    @extend %bg-img-properties;
+    width: 100%;
+    height: 500px;
+    color: nth($colores, 1);
+    padding-top: 10px;
+    margin-bottom: 20px;
+    @extend %shadow;
+}
+.accesibilidad{
+    @include flex(flex, space-between, center);
+    margin: 10px;
+    .info{
+        @include flex(flex, center, center);
+        margin: 10px;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        color: nth($colores, 1);
+        background-color: nth($colores, 5);
+        flex-direction: column;
+        transition: all .4s;
+        @extend %shadow;
+        &:hover{
+            background-color: nth($colores, 7);
+            transform: scale(1.1);
+            @extend %shadow;
+        }
+        h3{
+            margin: 20px;
+        }
+        .rrss{
+            img{
+                width: 20px;
+            }
+            display: inline-block;
+        }
+    }
+}
+.container{
+    @include flex(flex, space-around, center);
+    margin: 20px 5px 5px 5px;
+    .mapa{
+        width: 45%;
+        @extend %shadow;
+    }
+    .formulario{
+        background-color: nth($colores, 7);
+        @include flex(flex, space-around, center);
+        flex-direction: column;
+        color: nth($colores, 1);
+        width: 45%;
+        height: 450px;
+        @extend %shadow;
+        h3{
+            margin-top: 20px;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+        div{
+            label{
+                margin-left: 30px;
+            }
+        }
+    }
+    a{
+        align-self: flex-end;
+        margin: 0 20px 20px 0;
+        &:hover{
+            background-color: nth($colores, 7);
+        }
+    }
+}

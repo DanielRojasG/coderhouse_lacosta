@@ -78,58 +78,6 @@ nav div a img{
     background-color: #4F8FD7;
 }
 
-/* header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.nav {
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    padding: 10px 0;
-    background: #2473cd;
-    justify-content: space-between;
-    box-shadow: 0 0 10px 0 #084285;
-}
-
-.nav a {
-    text-decoration: none;
-    font-weight: 500;
-    color: white;
-    transition: all .5s;
-}
-.nav a:hover {
-    color: #032853;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    margin-left: 15px;
-    background: #2473cd;
-    border-radius: 50%;
-}
-
-.nav-bar {
-    display: flex;
-    list-style: none;
-    padding: 20px;
-    justify-content: space-between;
-}
-
-.nav-bar li {
-    padding: 10px;
-    color: white;
-    font-size: 1.6rem;
-
-} */
-
-
-
-/*HERO*/
-
 .hero {
     background: url(../img/hero.jpeg);
     background-size: cover;
@@ -433,9 +381,6 @@ h1 {
     margin: 10px;
 }
 
-.cards-products__item {
-    box-shadow: 4px 4px 7px 0 #084285;
-}
 .cards-products__item:hover{
     transform: scale(1.05);
 }
@@ -519,7 +464,7 @@ h1 {
     display: inline-block;
 }
 
-.accesibilidad div #rrss img {
+.accesibilidad div .rrss img {
     width: 20px;
 }
 
@@ -576,13 +521,13 @@ h1 {
     align-items: center;
 }
 
-.platos__receta:nth-child(1) {
+.platos__receta1{
     background: url(../img/paila-marina.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.platos__receta:nth-child(2) {
+.platos__receta2{
     background: url(../img/ceviche.jpeg);
     background-size: cover;
     background-repeat: no-repeat;

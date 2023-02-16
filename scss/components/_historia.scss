@@ -1,0 +1,55 @@
+.history{
+    .section{
+        @extend %bg-img-properties;
+        height: auto;
+        color: nth($colores, 1);
+        @extend %shadow;
+        margin-bottom: 40px;
+        transition: all .4s;
+        &:hover{
+            transform: scale(1.03);
+        }
+        div{
+            width: 30%;
+            @include flex(flex, center, center);
+            background-color: nth($colores, 7);
+            height: auto;
+            flex-direction: column;
+            -webkit-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+            -moz-box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+            box-shadow: 16px 3px 8px -6px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+
+.historia1{
+    img{
+        background: url(../img/historia1.jpg);
+    }
+    h2, p{
+        text-align: left;
+        margin: 10px 30px 10px 30px;
+        line-height: 25px;
+    }
+}
+.historia2{
+    img{
+        background: url(../img/historia2.jpeg);
+    }
+    h2, p{
+        text-align: right;
+        margin: 10px 30px 10px 30px;
+        line-height: 25px;
+    }
+}
+.historia3{
+    img{
+        background: url(../img/historia3.jpeg);
+    }
+    h2, p{
+        text-align: left;
+        margin: 10px 30px 10px 30px;
+        line-height: 25px;
+    }
+}

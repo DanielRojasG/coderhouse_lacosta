@@ -1,0 +1,40 @@
+.recetas{
+    .platos{
+        @include flex(flex, space-evenly, center);
+        .platos__receta{
+            width: 45%;
+            height: 850px;
+            color: nth($colores, 1);
+            border-radius: 10%;
+            @extend %shadow;
+            .platos__receta1{
+                background: url(../img/paila-marina.jpg);
+                @extend %bg-img-properties;
+            }
+            .platos__receta2{
+                background: url(../img/ceviche.jpeg);
+                @extend %bg-img-properties;
+            }
+            ul{
+                li{
+                    padding: 2px;
+                    list-style: none;
+                    margin: 0 0 15px 15px;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+            h3{
+                padding-top: 15px;
+                text-align: center;
+            }
+            p{
+                letter-spacing: 1px;
+                line-height: 30px;
+                margin: 0 15px 15px 15px;
+                padding: 10px;
+            }
+        }
+    }
+}
