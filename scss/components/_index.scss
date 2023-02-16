@@ -41,7 +41,13 @@ main{
             text-align: center;
         }
         .productos-estrella{
+            @include flex(grid, space-evenly, center);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            justify-items: center;
             .productos-estrella__item{
+                @include flex(flex, center, center);
+                flex-direction: column;
                 img{
                     align-self: center;
                     width: 150px;
