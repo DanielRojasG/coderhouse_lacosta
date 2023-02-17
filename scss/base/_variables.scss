@@ -28,8 +28,7 @@ rgba(0, 0, 0, 0.507);
 
 //* MIXINS
 
-@mixin flex($flex, $justify, $align){
+@mixin flex($flex, $justify){
     display: $flex;
     justify-content: $justify;
-    align-items: $align;
 }

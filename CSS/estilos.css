@@ -1,8 +1,8 @@
-main .hero, .products, .history .section, .recetas .platos .platos__receta .platos__receta1, .recetas .platos .platos__receta .platos__receta2, .contact-us {
+main .hero, .products, .recetas .platos .platos__receta .platos__receta1, .recetas .platos .platos__receta .platos__receta2, .contact-us {
   background-position: center;
   background-repeat: no-repeat; }
 
-main .items .productos-estrella .productos-estrella__item img, main .cards .cards__item, .history .section, .recetas .platos .platos__receta, .contact-us, .accesibilidad .info, .accesibilidad .info:hover, .container .mapa, .container .formulario {
+main .items .productos-estrella .productos-estrella__item img, main .cards .cards__item, .history section, .history section div, .recetas .platos .platos__receta, .contact-us, .accesibilidad .info, .accesibilidad .info:hover, .container .mapa, .container .formulario {
   -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
   -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
   box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
@@ -77,11 +77,11 @@ header nav {
 
 main .hero {
   background: url(../img/hero.jpeg);
+  background-size: cover;
   height: 85vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
   height: 800px;
   color: white; }
@@ -115,14 +115,12 @@ main .items h2 {
 main .items .productos-estrella {
   display: grid;
   justify-content: space-evenly;
-  align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   justify-items: center; }
   main .items .productos-estrella .productos-estrella__item {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column; }
     main .items .productos-estrella .productos-estrella__item img {
       align-self: center;
@@ -133,12 +131,10 @@ main .items .productos-estrella {
 main .cards {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   margin-top: 60px; }
   main .cards .cards__item {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 500px;
     height: 300px;
     padding: 10px;
@@ -151,8 +147,7 @@ main .cards {
       text-decoration: none;
       color: #084285;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      justify-content: center; }
       main .cards .cards__item a .cards__item__text {
         margin-bottom: 10px;
         padding: 10px; }
@@ -166,7 +161,8 @@ main .cards {
         height: 240px; }
 
 .products {
-  background: url(../img/sea.jpeg); }
+  background: url(../img/sea.jpeg);
+  background-size: cover; }
   .products main .carousel-item img {
     max-width: 900px;
     width: 80%;
@@ -192,14 +188,12 @@ main .cards {
     color: white;
     box-shadow: 5px 5px 10px 0 #084285; }
     .products main .banner h2 {
-      display: center;
-      justify-content: center;
-      align-items: center;
+      text-align: center;
+      margin-top: 2rem;
       letter-spacing: 5px; }
   .products main .cards-products {
     display: grid;
     justify-content: space-around;
-    align-items: center;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -233,53 +227,51 @@ main .cards {
         padding: 20px;
         margin: 10px 60px; }
 
-.history .section {
-  height: auto;
+.history section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
   color: white;
   margin-bottom: 40px;
   transition: all .4s; }
-  .history .section:hover {
+  .history section:hover {
     transform: scale(1.03); }
-  .history .section div {
+  .history section div {
     width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #032853;
-    height: auto;
+    height: 100%;
+    display: flex;
     flex-direction: column;
-    -webkit-box-shadow: 16px 3px 8px -6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 16px 3px 8px -6px rgba(0, 0, 0, 0.75);
-    box-shadow: 16px 3px 8px -6px rgba(0, 0, 0, 0.75); }
+    justify-content: center;
+    text-align: center; }
+    .history section div img {
+      display: none; }
 
-.historia1 img {
+.historia1 {
   background: url(../img/historia1.jpg); }
+  .historia1 h2, .historia1 p {
+    text-align: left;
+    margin: 10px 30px 10px 30px;
+    line-height: 25px; }
 
-.historia1 h2, .historia1 p {
-  text-align: left;
-  margin: 10px 30px 10px 30px;
-  line-height: 25px; }
-
-.historia2 img {
+.historia2 {
   background: url(../img/historia2.jpeg); }
+  .historia2 h2, .historia2 p {
+    text-align: right;
+    margin: 10px 30px 10px 30px;
+    line-height: 25px; }
 
-.historia2 h2, .historia2 p {
-  text-align: right;
-  margin: 10px 30px 10px 30px;
-  line-height: 25px; }
-
-.historia3 img {
+.historia3 {
   background: url(../img/historia3.jpeg); }
-
-.historia3 h2, .historia3 p {
-  text-align: left;
-  margin: 10px 30px 10px 30px;
-  line-height: 25px; }
+  .historia3 h2, .historia3 p {
+    text-align: left;
+    margin: 10px 30px 10px 30px;
+    line-height: 25px; }
 
 .recetas .platos {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
+  justify-content: space-evenly; }
   .recetas .platos .platos__receta {
     width: 45%;
     height: 850px;
@@ -315,12 +307,10 @@ main .cards {
 .accesibilidad {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 10px; }
   .accesibilidad .info {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 10px;
     width: 250px;
     height: 250px;
@@ -342,15 +332,13 @@ main .cards {
 .container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  margin: 20px 5px 5px 5px; }
+  margin-top: 3rem; }
   .container .mapa {
     width: 45%; }
   .container .formulario {
     background-color: #032853;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-direction: column;
     color: white;
     width: 45%;
@@ -367,108 +355,118 @@ main .cards {
     .container a:hover {
       background-color: #032853; }
 
-.footer {
+footer {
   margin-top: 100px;
   height: 320px;
   color: colores;
   background-color: #032853;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   gap: 40px; }
-  .footer .social {
+  footer .social {
     width: 300px; }
-    .footer .social .footer-logo {
+    footer .social .footer-logo {
       width: 40%;
       height: 40%;
       background-color: #032853;
       padding-top: 20px; }
-    .footer .social div h3 {
+    footer .social div h3 {
       margin-top: 20px;
       letter-spacing: 1px;
       text-align: left; }
-    .footer .social div a {
+    footer .social div a {
       font-size: 40px;
       text-align: left;
       text-decoration: none;
       color: white; }
-      .footer .social div a img {
+      footer .social div a img {
         margin: 10px 0px;
         padding: 5px;
         width: 30px;
         text-align: center; }
-  .footer div .footer-info {
+  footer div .footer-info {
     margin-top: 10px;
     gap: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .footer div .footer-info ul h4 {
+    justify-content: space-around; }
+    footer div .footer-info ul h4 {
       margin-bottom: 10px;
       letter-spacing: 2px;
       color: white; }
-    .footer div .footer-info ul a {
+    footer div .footer-info ul a {
       text-decoration: none;
       color: white; }
-      .footer div .footer-info ul a li {
+      footer div .footer-info ul a li {
         padding: 8px;
         list-style: none; }
-        .footer div .footer-info ul a li:hover {
+        footer div .footer-info ul a li:hover {
           text-decoration: underline #4F8FD7;
           color: #4F8FD7; }
-  .footer div .legal {
+  footer div .legal {
     margin-top: 20px;
     text-align: center;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    color: white; }
 
 @media screen and (max-width: 1030px) {
   /*FOOTER*/
-  .footer {
+  footer {
     flex-direction: column;
     height: fit-content;
     text-align: center;
     gap: 0; }
-  .social h3 {
-    text-align: center; }
-  .footer-info {
-    gap: 25px;
-    width: 100vw;
-    justify-content: space-around; }
-  /*HTML INDEX*/
-  .productos-estrella {
+    footer .social h3 {
+      text-align: center; }
+    footer .footer-info {
+      gap: 25px;
+      width: 100vw;
+      justify-content: space-around; }
+  /*INDEX*/
+  .items .productos-estrella {
     grid-template-columns: repeat(2, 1fr);
     width: 100%; }
-  .productos-estrella__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 20px;
-    width: 40vw;
-    height: 250px;
-    padding: 10px; }
+    .items .productos-estrella .productos-estrella__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      width: 40vw;
+      height: 250px;
+      padding: 10px; }
   .cards {
     width: 100%;
     justify-content: space-around; }
-  .cards__item {
-    margin: 20px;
-    width: 40%;
-    height: 500px;
-    -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
-    -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
-    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
-  .cards__item:nth-child(1) {
-    background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.438)), url(../img/trabajadores.jpeg);
-    background-size: cover; }
-  .cards__item:nth-child(2) {
-    background: url(../img/ceviche.jpeg);
-    background-size: cover; }
-  .cards__item__text {
-    font-size: 15px;
-    margin: 10px;
-    color: white; }
-  .cards__item__div img {
-    display: none; }
-  .cards__item:hover {
-    box-shadow: none; } }
+    .cards .cards__item {
+      margin: 20px;
+      width: 40%;
+      height: 500px;
+      -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+      -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+      box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
+      .cards .cards__item:hover {
+        box-shadow: none; }
+      .cards .cards__item:nth-child(1) {
+        background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.438)), url(../img/trabajadores.jpeg);
+        background-size: cover; }
+      .cards .cards__item:nth-child(2) {
+        background: url(../img/ceviche.jpeg);
+        background-size: cover; }
+      .cards .cards__item a .cards__item__text {
+        font-size: 15px;
+        margin: 10px;
+        color: white; }
+      .cards .cards__item a .cards__item__div img {
+        display: none; }
+  /*PRODCTOS*/
+  main .banner {
+    font-size: 20px; }
+  main .cards-products {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    row-gap: 60px; }
+  .platos .platos__receta {
+    width: 90%;
+    height: auto;
+    margin: 50px; } }

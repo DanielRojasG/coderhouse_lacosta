@@ -649,7 +649,7 @@ transition: all .4s;
     /*HTML INDEX*/
     .productos-estrella{
         grid-template-columns: repeat(2, 1fr);
-        width: 100%
+        width: 100%;
     }
     .productos-estrella__item{
         display: flex;

@@ -1,6 +1,7 @@
 .products{
     background: url(../img/sea.jpeg);
     @extend %bg-img-properties;
+    background-size: cover;
     main{
         .carousel-item{
             img{
@@ -31,12 +32,13 @@
             color: white;
             box-shadow: 5px 5px 10px 0 nth($colores, 5);
             h2{ 
-                @include flex(center, center, center);
+                text-align: center;
+                margin-top: 2rem;
                 letter-spacing: 5px;
             }
         }
         .cards-products{
-            @include flex(grid, space-around, center);
+            @include flex(grid, space-around);
             justify-items: center;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;

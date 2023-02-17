@@ -1,9 +1,9 @@
-.footer{
+footer{
     margin-top: 100px;
     height: 320px;
     color: nth(colores, 1);
     background-color: nth($colores, 7);
-    @include flex(flex, space-evenly, center);
+    @include flex(flex, space-evenly);
     gap: 40px;   
     .social{
         width: 300px;
@@ -38,7 +38,7 @@
             margin-top: 10px;
             gap: 100px;
             width: 100%;
-            @include flex(flex, space-around, center);
+            @include flex(flex, space-around);
             ul{
                 h4{
                     margin-bottom: 10px;
@@ -63,6 +63,7 @@
             margin-top: 20px;
             text-align: center;
             letter-spacing: 2px;
+            color: nth($colores, 1);
         }
     }
 }

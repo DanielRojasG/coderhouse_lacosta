@@ -1,6 +1,6 @@
 .recetas{
     .platos{
-        @include flex(flex, space-evenly, center);
+        @include flex(flex, space-evenly);
         .platos__receta{
             width: 45%;
             height: 850px;
