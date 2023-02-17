@@ -67,11 +67,7 @@ nav div a img{
 }
 
 .hamburguesa{
-    background-image: url(../img/list.svg);
     color: #2473cd;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .dropdown-menu{

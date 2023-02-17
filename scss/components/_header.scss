@@ -10,9 +10,7 @@ header{
             }
             button{
                 background-color: nth($colores, 1);
-                background-image: url(../img/list.svg);
                 color: nth($colores, 4);
-                @extend %bg-img-properties;
             }
             div{
                 ul{
@@ -30,6 +28,11 @@ header{
                             }
                         }
                     }
+                }
+                form{
+                    background-color: nth($colores, 3);
+                    input{}
+                    button{}
                 }
             }
         }

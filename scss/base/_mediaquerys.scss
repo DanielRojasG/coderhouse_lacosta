@@ -1,0 +1,62 @@
+@media screen and (max-width:1030px) {
+    /*FOOTER*/
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+        gap: 0;
+    }
+    .social h3{
+        text-align: center;
+    }
+    .footer-info{
+        gap: 25px;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    /*HTML INDEX*/
+    .productos-estrella{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%
+    }
+    .productos-estrella__item{
+        @include flex(flex, center, center);
+        flex-direction: row;
+        margin: 20px;
+        width: 40vw;
+        height: 250px;
+        padding: 10px;
+    }
+    .cards{
+        width:100%;
+        justify-content: space-around;
+    }
+    .cards__item{
+        margin: 20px;
+        width: 40%;
+        height: 500px;
+        -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+        -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+        box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+    }
+    .cards__item:nth-child(1){
+        background:linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.438)), url(../img/trabajadores.jpeg);
+        background-size: cover;
+    }
+
+    .cards__item:nth-child(2){
+        background: url(../img/ceviche.jpeg);
+        background-size: cover;
+    }
+    .cards__item__text{
+        font-size: 15px;
+        margin: 10px;
+        color: white;
+    }
+    .cards__item__div img{
+        display: none;
+    }
+    .cards__item:hover{
+        box-shadow: none;
+    }
+}

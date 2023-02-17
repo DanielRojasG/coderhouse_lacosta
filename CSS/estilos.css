@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-header nav div button, main .hero, .products, .history .section, .recetas .platos .platos__receta .platos__receta1, .recetas .platos .platos__receta .platos__receta2, .contact-us {
+main .hero, .products, .history .section, .recetas .platos .platos__receta .platos__receta1, .recetas .platos .platos__receta .platos__receta2, .contact-us {
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 main .items .productos-estrella .productos-estrella__item img, main .cards .cards__item, .history .section, .recetas .platos .platos__receta, .contact-us, .accesibilidad .info, .accesibilidad .info:hover, .container .mapa, .container .formulario {
   -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
@@ -66,7 +64,6 @@ header nav {
     height: 80px; }
   header nav div button {
     background-color: white;
-    background-image: url(../img/list.svg);
     color: #2473cd; }
   header nav div div ul .nav-item .nav-link {
     color: white;
@@ -75,6 +72,8 @@ header nav {
     background-color: #4F8FD7; }
     header nav div div ul .nav-item ul li a {
       color: white; }
+  header nav div div form {
+    background-color: #4F8FD7; }
 
 main .hero {
   background: url(../img/hero.jpeg);
@@ -113,11 +112,23 @@ main .items h2 {
   color: white;
   text-align: center; }
 
-main .items .productos-estrella .productos-estrella__item img {
-  align-self: center;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%; }
+main .items .productos-estrella {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  justify-items: center; }
+  main .items .productos-estrella .productos-estrella__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    main .items .productos-estrella .productos-estrella__item img {
+      align-self: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 100%; }
 
 main .cards {
   display: flex;
@@ -395,7 +406,8 @@ main .cards {
     align-items: center; }
     .footer div .footer-info ul h4 {
       margin-bottom: 10px;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      color: white; }
     .footer div .footer-info ul a {
       text-decoration: none;
       color: white; }
@@ -409,3 +421,54 @@ main .cards {
     margin-top: 20px;
     text-align: center;
     letter-spacing: 2px; }
+
+@media screen and (max-width: 1030px) {
+  /*FOOTER*/
+  .footer {
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+    gap: 0; }
+  .social h3 {
+    text-align: center; }
+  .footer-info {
+    gap: 25px;
+    width: 100vw;
+    justify-content: space-around; }
+  /*HTML INDEX*/
+  .productos-estrella {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; }
+  .productos-estrella__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    width: 40vw;
+    height: 250px;
+    padding: 10px; }
+  .cards {
+    width: 100%;
+    justify-content: space-around; }
+  .cards__item {
+    margin: 20px;
+    width: 40%;
+    height: 500px;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
+  .cards__item:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.438)), url(../img/trabajadores.jpeg);
+    background-size: cover; }
+  .cards__item:nth-child(2) {
+    background: url(../img/ceviche.jpeg);
+    background-size: cover; }
+  .cards__item__text {
+    font-size: 15px;
+    margin: 10px;
+    color: white; }
+  .cards__item__div img {
+    display: none; }
+  .cards__item:hover {
+    box-shadow: none; } }
