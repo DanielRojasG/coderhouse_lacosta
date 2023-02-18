@@ -1,6 +1,6 @@
 @media screen and (max-width:1030px) {
     /*FOOTER*/
-    footer{
+    .footer{
         flex-direction: column;
         height: fit-content;
         text-align: center;
@@ -16,57 +16,67 @@
             justify-content: space-around;
         }
     }
-
     /*INDEX*/
-    .items{
-        .productos-estrella{
-            grid-template-columns: repeat(2, 1fr);
-            width: 100%;
-            .productos-estrella__item{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin: 20px;
-                width: 40vw;
-                height: 250px;
-                padding: 10px;
+    main{
+        .items{
+            .productos-estrella{
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+                .productos-estrella__item{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px;
+                    width: 40vw;
+                    height: 250px;
+                    padding: 10px;
+                }
             }
         }
-    }
-    .cards{
-        width:100%;
-        justify-content: space-around;
-        .cards__item{
-            &:hover{
-                box-shadow: none;
-            }
-            margin: 20px;
-            width: 40%;
-            height: 500px;
-            -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-            -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-            box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-            &:nth-child(1){
-                background:linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.438)), url(../img/trabajadores.jpeg);
-                background-size: cover;
-            }
-            &:nth-child(2){
-                background: url(../img/ceviche.jpeg);
-                background-size: cover;
-            }
-            a{
-                .cards__item__text{
-                    font-size: 15px;
-                    margin: 10px;
-                    color: white;
+        .cards{
+            width:100%;
+            justify-content: space-around;
+            .cards__item{
+                &:hover{
+                    box-shadow: none;
                 }
-                .cards__item__div{
-                    img{
-                        display: none;
+                margin: 20px;
+                width: 40%;
+                height: 500px;
+                -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+                -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+                box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+                &:nth-child(1){
+                    background:linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.438)), url(../img/trabajadores.jpeg);
+                    background-size: cover;
+                }
+                &:nth-child(2){
+                    background: url(../img/ceviche.jpeg);
+                    background-size: cover;
+                }
+                a{
+                    .cards__item__text{
+                        font-size: 15px;
+                        margin: 10px;
+                        color: white;
+                    }
+                    .cards__item__div{
+                        img{
+                            display: none;
+                        }
                     }
                 }
             }
+        }
+    }
+    /*HISTORIA*/
+    .history{
+        section{
+            height: fit-content;
+            }
+            div{
+                padding: 10px ;
         }
     }
     /*PRODCTOS*/
@@ -80,25 +90,42 @@
             row-gap: 60px;
         }
     }
-
     /*RECETAS*/
-    .platos{
-        .platos__receta{
-            width: 90%;
-            height: auto;
-            margin: 50px;
+    main{
+        .recetas{
+            .platos{
+                flex-direction: column;
+                .platos__receta{
+                    width: 90%;
+                    height: auto;
+                    margin: 50px;
+                    h3{
+                        margin: 5px;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    /*CONTACTO*/
+    main{
+        .container{
+            flex-direction: column;
+            align-items: center;
+            .mapa{
+                width: 90%;
+            }
+            .formulario{
+                margin-top: 30px;
+                width: 90%;
+            }
         }
     }
 }
 
 @media screen and (max-width:880px){
-    .nav-bar{
-        padding: 10px;
-        align-items: center;
-        li{
-            padding: 5px;
-        }
-    }
     main{
         .hero{
             width: 100vw;
@@ -146,46 +173,58 @@
 }
 
 @media screen and (max-width:690px){
-    .hero{
-        width:calc(100%-10px);
-        height: auto;
-        align-items: center;
-        div{
-            margin: 0 0 10px 0;
-        }
-    }
-    .productos-estrella{
-        .productos-estrella__item{
-            &:nth-child(1){
-                background-image: url(../img/camaron.jpg);
-                background-size: cover;
-            }
-            &:nth-child(2){
-                background-image: url(../img/ostiones.jpg);
-                background-size: cover;
-            }
-            &:nth-child(3){
-                background-image: url(../img/reineta.jpg);
-                background-size: cover;
-            }
-            &:nth-child(4){
-                background-image: url(../img/salmoncongelado.jpg);
-                background-size: cover;
+    /*INDEX*/
+    main{
+        .hero{
+            width:calc(100%-10px);
+            height: auto;
+            align-items: center;
+            div{
+                margin: 0 0 10px 0;
             }
         }
-    }
-    .cards{
-        width: 100%;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        .cards__item{
-            width: 70%;
-            height: 400px;
-            justify-content: space-around;
-            -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-            -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-            box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+        .items{
+            .productos-estrella{
+                grid-template-columns: 1fr;
+                .productos-estrella__item{
+                        -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+                        -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+                        box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+                    img{
+                        display: none;
+                    }
+                    &:nth-child(1){
+                        background-image: url(../img/camaron.jpg);
+                        background-size: cover;
+                    }
+                    &:nth-child(2){
+                        background-image: url(../img/ostiones.jpg);
+                        background-size: cover;
+                    }
+                    &:nth-child(3){
+                        background-image: url(../img/reineta.jpg);
+                        background-size: cover;
+                    }
+                    &:nth-child(4){
+                        background-image: url(../img/salmoncongelado.jpg);
+                        background-size: cover;
+                    }
+                }
+        }
+        }
+        .cards{
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            .cards__item{
+                width: 70%;
+                height: 400px;
+                justify-content: space-around;
+                -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+                -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+                box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+            }
         }
     }
     /*PRODUCTOS*/
@@ -212,20 +251,17 @@
     }
 }
 @media screen and (max-width:480px){
-    .hero{
-        background: url(../img/hero.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        div{
-            width: 300px;
-            align-items: center;
+    main{
+        .hero{
+            background: url(../img/hero.jpeg);
             background-size: cover;
+            background-repeat: no-repeat;
+            div{
+                width: 300px;
+                align-items: center;
+                background-size: cover;
+            }
         }
-    }
-    .productos-estrella{
-        -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-        -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
-        box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
     }
     .wsp {
         position: fixed;
@@ -262,6 +298,17 @@
                     padding-bottom: 10px;
                 }
             }
+        }
+    }
+    /*FOOTER*/
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+        gap: 0;
+        .footer-info{
+            flex-direction: column;
+            gap: 50px;
         }
     }
 }
