@@ -80,6 +80,8 @@
             row-gap: 60px;
         }
     }
+
+    /*RECETAS*/
     .platos{
         .platos__receta{
             width: 90%;
@@ -89,3 +91,177 @@
     }
 }
 
+@media screen and (max-width:880px){
+    .nav-bar{
+        padding: 10px;
+        align-items: center;
+        li{
+            padding: 5px;
+        }
+    }
+    main{
+        .hero{
+            width: 100vw;
+        }
+        .items{
+            .productos-estrella{
+                .productos-estrella__item{
+                    width: 300px;
+                    height: 200px;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+        .cards{
+            flex-direction: row;
+        }
+    }
+    .footer{
+        margin-top: 50px;
+    }
+    /*HISTORIA*/
+    .history{
+        .historia{
+            background:none;
+            flex-direction: column;
+            div{
+                width: 100%;
+                img{
+                    display: block;
+                }
+                h2, p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    /*CONTACTO*/
+    .formulario{
+        text-align: center;
+        label{
+            display: block;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width:690px){
+    .hero{
+        width:calc(100%-10px);
+        height: auto;
+        align-items: center;
+        div{
+            margin: 0 0 10px 0;
+        }
+    }
+    .productos-estrella{
+        .productos-estrella__item{
+            &:nth-child(1){
+                background-image: url(../img/camaron.jpg);
+                background-size: cover;
+            }
+            &:nth-child(2){
+                background-image: url(../img/ostiones.jpg);
+                background-size: cover;
+            }
+            &:nth-child(3){
+                background-image: url(../img/reineta.jpg);
+                background-size: cover;
+            }
+            &:nth-child(4){
+                background-image: url(../img/salmoncongelado.jpg);
+                background-size: cover;
+            }
+        }
+    }
+    .cards{
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        .cards__item{
+            width: 70%;
+            height: 400px;
+            justify-content: space-around;
+            -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+            -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+            box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+        }
+    }
+    /*PRODUCTOS*/
+    .cards-products{
+        grid-template-columns: 1fr;
+    }
+    /*CONTACTO*/
+    .accesibilidad{
+        flex-direction: column;
+        align-items: center;
+        .info{
+            width: 80%;
+            height: 180px;
+        }
+    }
+    .container{
+        iframe{
+            width: 80%;
+            margin: 20px 0;
+        }
+        form{
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .hero{
+        background: url(../img/hero.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        div{
+            width: 300px;
+            align-items: center;
+            background-size: cover;
+        }
+    }
+    .productos-estrella{
+        -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+        -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+        box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.67);
+    }
+    .wsp {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        img{
+            width: 40px;
+        }
+    }
+    /*PRODUCTOS*/
+    .products{
+        main{
+            .banner{
+                font-size: 15px;
+            }
+            .cards-products{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    /*RECETAS*/
+    .recetas{
+        .platos{
+            .platos__receta{
+                &:nth-child(1), &:nth-child(2){
+                    background: nth($colores, 1);
+                    color: nth($colores, 7);
+                    border: 1px solid nth($colores, 7);
+                    -webkit-box-shadow: 10px 10px 8px -5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 10px 10px 8px -5px rgba(0,0,0,0.75);
+                    box-shadow: 10px 10px 8px -5px rgba(0,0,0,0.75);   
+                }
+                h2{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
