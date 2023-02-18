@@ -1,19 +1,18 @@
 .recetas{
     .platos{
         @include flex(flex, space-evenly);
+        align-items: center;
         .platos__receta{
             width: 45%;
             height: 850px;
             color: nth($colores, 1);
             border-radius: 10%;
-            @extend %shadow;
-            .platos__receta1{
-                background: url(../img/paila-marina.jpg);
-                @extend %bg-img-properties;
-            }
-            .platos__receta2{
-                background: url(../img/ceviche.jpeg);
-                @extend %bg-img-properties;
+            -webkit-box-shadow: 22px 18px 12px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow: 22px 18px 12px -4px rgba(0,0,0,0.75);
+            box-shadow: 22px 18px 12px -4px rgba(0,0,0,0.75);
+            h2{
+                padding-top: 15px;
+                text-align: center;
             }
             ul{
                 li{
@@ -37,4 +36,16 @@
             }
         }
     }
+}
+
+.platos__receta1{
+    background: url(../img/paila-marina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.platos__receta2{
+    background: url(../img/ceviche.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

@@ -1,8 +1,8 @@
-main .hero, .products, .recetas .platos .platos__receta .platos__receta1, .recetas .platos .platos__receta .platos__receta2, .contact-us {
+main .hero, .products, .contact-us {
   background-position: center;
   background-repeat: no-repeat; }
 
-main .items .productos-estrella .productos-estrella__item img, main .cards .cards__item, .history section, .history section div, .recetas .platos .platos__receta, .contact-us, .accesibilidad .info, .accesibilidad .info:hover, .container .mapa, .container .formulario {
+main .items .productos-estrella .productos-estrella__item img, main .cards .cards__item, .history section, .history section div, .contact-us, .accesibilidad .info, .accesibilidad .info:hover, .container .mapa, .container .formulario {
   -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
   -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
   box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
@@ -271,16 +271,19 @@ main .cards {
 
 .recetas .platos {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: center; }
   .recetas .platos .platos__receta {
     width: 45%;
     height: 850px;
     color: white;
-    border-radius: 10%; }
-    .recetas .platos .platos__receta .platos__receta1 {
-      background: url(../img/paila-marina.jpg); }
-    .recetas .platos .platos__receta .platos__receta2 {
-      background: url(../img/ceviche.jpeg); }
+    border-radius: 10%;
+    -webkit-box-shadow: 22px 18px 12px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 22px 18px 12px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 22px 18px 12px -4px rgba(0, 0, 0, 0.75); }
+    .recetas .platos .platos__receta h2 {
+      padding-top: 15px;
+      text-align: center; }
     .recetas .platos .platos__receta ul li {
       padding: 2px;
       list-style: none;
@@ -295,6 +298,16 @@ main .cards {
       line-height: 30px;
       margin: 0 15px 15px 15px;
       padding: 10px; }
+
+.platos__receta1 {
+  background: url(../img/paila-marina.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.platos__receta2 {
+  background: url(../img/ceviche.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .contact-us {
   background: url(../img/contacto.jpeg);
