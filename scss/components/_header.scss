@@ -10,7 +10,13 @@ header{
             }
             button{
                 background-color: nth($colores, 1);
-                color: nth($colores, 4);
+                color: nth($colores, 1);
+                .navbar-toggler-icon{
+                    background: url(/img/lista.png);
+                    background-repeat:no-repeat;
+                    background-size: cover;
+                    }
+                }
             }
             div{
                 ul{
@@ -30,9 +36,8 @@ header{
                     }
                 }
                 form{
-                    background-color: nth($colores, 3);
+                    color: nth($colores, 1);
                 }
             }
         }
-    }
 }
