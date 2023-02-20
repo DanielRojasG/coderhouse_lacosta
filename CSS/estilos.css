@@ -251,21 +251,18 @@ main .cards {
 .historia1 {
   background: url(../img/historia1.jpg); }
   .historia1 h2, .historia1 p {
-    text-align: left;
     margin: 10px 30px 10px 30px;
     line-height: 25px; }
 
 .historia2 {
   background: url(../img/historia2.jpeg); }
   .historia2 h2, .historia2 p {
-    text-align: right;
     margin: 10px 30px 10px 30px;
     line-height: 25px; }
 
 .historia3 {
   background: url(../img/historia3.jpeg); }
   .historia3 h2, .historia3 p {
-    text-align: left;
     margin: 10px 30px 10px 30px;
     line-height: 25px; }
 
@@ -275,7 +272,7 @@ main .cards {
   align-items: center; }
   .recetas .platos .platos__receta {
     width: 45%;
-    height: 850px;
+    height: 870px;
     color: white;
     border-radius: 10%;
     -webkit-box-shadow: 22px 18px 12px -4px rgba(0, 0, 0, 0.75);
@@ -311,6 +308,7 @@ main .cards {
 
 .contact-us {
   background: url(../img/contacto.jpeg);
+  background-size: cover;
   width: 100%;
   height: 500px;
   color: white;
@@ -375,6 +373,7 @@ footer {
   background-color: #032853;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   gap: 40px; }
   footer .social {
     width: 300px; }
@@ -384,6 +383,7 @@ footer {
       background-color: #032853;
       padding-top: 20px; }
     footer .social div h3 {
+      color: white;
       margin-top: 20px;
       letter-spacing: 1px;
       text-align: left; }
@@ -424,22 +424,22 @@ footer {
 
 @media screen and (max-width: 1030px) {
   /*FOOTER*/
-  footer {
+  .footer {
     flex-direction: column;
     height: fit-content;
     text-align: center;
     gap: 0; }
-    footer .social h3 {
+    .footer .social h3 {
       text-align: center; }
-    footer .footer-info {
+    .footer .footer-info {
       gap: 25px;
       width: 100vw;
       justify-content: space-around; }
   /*INDEX*/
-  .items .productos-estrella {
+  main .items .productos-estrella {
     grid-template-columns: repeat(2, 1fr);
     width: 100%; }
-    .items .productos-estrella .productos-estrella__item {
+    main .items .productos-estrella .productos-estrella__item {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -448,30 +448,35 @@ footer {
       width: 40vw;
       height: 250px;
       padding: 10px; }
-  .cards {
+  main .cards {
     width: 100%;
     justify-content: space-around; }
-    .cards .cards__item {
+    main .cards .cards__item {
       margin: 20px;
       width: 40%;
       height: 500px;
       -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
       -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
       box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
-      .cards .cards__item:hover {
+      main .cards .cards__item:hover {
         box-shadow: none; }
-      .cards .cards__item:nth-child(1) {
+      main .cards .cards__item:nth-child(1) {
         background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.438)), url(../img/trabajadores.jpeg);
         background-size: cover; }
-      .cards .cards__item:nth-child(2) {
+      main .cards .cards__item:nth-child(2) {
         background: url(../img/ceviche.jpeg);
         background-size: cover; }
-      .cards .cards__item a .cards__item__text {
+      main .cards .cards__item a .cards__item__text {
         font-size: 15px;
         margin: 10px;
         color: white; }
-      .cards .cards__item a .cards__item__div img {
+      main .cards .cards__item a .cards__item__div img {
         display: none; }
+  /*HISTORIA*/
+  .history section {
+    height: fit-content; }
+  .history div {
+    padding: 10px; }
   /*PRODCTOS*/
   main .banner {
     font-size: 20px; }
@@ -479,7 +484,147 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     row-gap: 60px; }
-  .platos .platos__receta {
-    width: 90%;
+  /*RECETAS*/
+  main .recetas .platos {
+    flex-direction: column; }
+    main .recetas .platos .platos__receta {
+      width: 90%;
+      height: auto;
+      margin: 50px; }
+      main .recetas .platos .platos__receta h3 {
+        margin: 5px; }
+      main .recetas .platos .platos__receta p {
+        text-align: center; }
+  /*CONTACTO*/
+  main .container {
+    flex-direction: column;
+    align-items: center; }
+    main .container .mapa {
+      width: 90%; }
+    main .container .formulario {
+      margin-top: 30px;
+      width: 90%; } }
+
+@media screen and (max-width: 880px) {
+  main .hero {
+    width: 100vw; }
+  main .items .productos-estrella .productos-estrella__item {
+    width: 300px;
+    height: 200px;
+    justify-content: space-evenly; }
+  main .cards {
+    flex-direction: row; }
+  .footer {
+    margin-top: 50px; }
+  /*HISTORIA*/
+  .history .historia {
+    background: none;
+    flex-direction: column; }
+    .history .historia div {
+      width: 100%; }
+      .history .historia div img {
+        display: block; }
+      .history .historia div h2, .history .historia div p {
+        text-align: center; }
+  /*CONTACTO*/
+  .formulario {
+    text-align: center; }
+    .formulario label {
+      display: block;
+      margin: 0; } }
+
+@media screen and (max-width: 690px) {
+  /*INDEX*/
+  main .hero {
+    width: calc(100%-10px);
     height: auto;
-    margin: 50px; } }
+    align-items: center; }
+    main .hero div {
+      margin: 0 0 10px 0; }
+  main .items .productos-estrella {
+    grid-template-columns: 1fr; }
+    main .items .productos-estrella .productos-estrella__item {
+      -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+      -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+      box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
+      main .items .productos-estrella .productos-estrella__item img {
+        display: none; }
+      main .items .productos-estrella .productos-estrella__item:nth-child(1) {
+        background-image: url(../img/camaron.jpg);
+        background-size: cover; }
+      main .items .productos-estrella .productos-estrella__item:nth-child(2) {
+        background-image: url(../img/ostiones.jpg);
+        background-size: cover; }
+      main .items .productos-estrella .productos-estrella__item:nth-child(3) {
+        background-image: url(../img/reineta.jpg);
+        background-size: cover; }
+      main .items .productos-estrella .productos-estrella__item:nth-child(4) {
+        background-image: url(../img/salmoncongelado.jpg);
+        background-size: cover; }
+  main .cards {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; }
+    main .cards .cards__item {
+      width: 70%;
+      height: 400px;
+      justify-content: space-around;
+      -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+      -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67);
+      box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.67); }
+  /*PRODUCTOS*/
+  .cards-products {
+    grid-template-columns: 1fr; }
+  /*CONTACTO*/
+  .accesibilidad {
+    flex-direction: column;
+    align-items: center; }
+    .accesibilidad .info {
+      width: 80%;
+      height: 180px; }
+  .container iframe {
+    width: 80%;
+    margin: 20px 0; }
+  .container form {
+    width: 80%; } }
+
+@media screen and (max-width: 480px) {
+  main .hero {
+    background: url(../img/hero.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    main .hero div {
+      width: 300px;
+      align-items: center;
+      background-size: cover; }
+  .wsp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px; }
+    .wsp img {
+      width: 40px; }
+  /*PRODUCTOS*/
+  .products main .banner {
+    font-size: 15px; }
+  .products main .cards-products {
+    grid-template-columns: 1fr; }
+  /*RECETAS*/
+  .recetas .platos .platos__receta:nth-child(1), .recetas .platos .platos__receta:nth-child(2) {
+    background: white;
+    color: #032853;
+    border: 1px solid #032853;
+    -webkit-box-shadow: 10px 10px 8px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 8px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 8px -5px rgba(0, 0, 0, 0.75); }
+  .recetas .platos .platos__receta h2 {
+    padding-bottom: 10px; }
+  /*FOOTER*/
+  .footer {
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+    gap: 0; }
+    .footer .footer-info {
+      flex-direction: column;
+      gap: 50px; } }

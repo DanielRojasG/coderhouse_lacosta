@@ -716,9 +716,6 @@ transition: all .4s;
 }
 
 @media screen and (max-width:880px) {
-    .contact-us{
-        height: 300px;
-    }
     .nav-bar{
         padding: 10px;
         align-items: center;
@@ -754,6 +751,7 @@ transition: all .4s;
     .historia1 h2, .historia1 p, .historia2 h2, .historia2 p, .historia3 h2, .historia3 p{
         text-align: center;
     }
+    /*CONTACTO*/
     .formulario{
         text-align: center;
     }
@@ -902,7 +900,6 @@ transition: all .4s;
         right: 20px;
         bottom: 20px;
     }
-    
     .wsp img{
         width: 40px;
     }
