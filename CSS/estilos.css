@@ -64,16 +64,20 @@ header nav {
     height: 80px; }
   header nav div button {
     background-color: white;
-    color: #2473cd; }
-  header nav div div ul .nav-item .nav-link {
+    color: white; }
+    header nav div button .navbar-toggler-icon {
+      background: url(/img/lista.png);
+      background-repeat: no-repeat;
+      background-size: contain; }
+  header nav div ul .nav-item .nav-link {
     color: white;
     font-size: 1.6rem; }
-  header nav div div ul .nav-item ul {
+  header nav div ul .nav-item ul {
     background-color: #4F8FD7; }
-    header nav div div ul .nav-item ul li a {
+    header nav div ul .nav-item ul li a {
       color: white; }
-  header nav div div form {
-    background-color: #4F8FD7; }
+  header nav div form {
+    color: white; }
 
 main .hero {
   background: url(../img/hero.jpeg);
@@ -366,7 +370,7 @@ main .cards {
     .container a:hover {
       background-color: #032853; }
 
-footer {
+.footer {
   margin-top: 100px;
   height: 320px;
   color: colores;
@@ -375,48 +379,45 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   gap: 40px; }
-  footer .social {
+  .footer .social {
     width: 300px; }
-    footer .social .footer-logo {
+    .footer .social h3 {
+      color: white; }
+    .footer .social .footer-logo {
       width: 40%;
       height: 40%;
       background-color: #032853;
       padding-top: 20px; }
-    footer .social div h3 {
-      color: white;
-      margin-top: 20px;
-      letter-spacing: 1px;
-      text-align: left; }
-    footer .social div a {
+    .footer .social div a {
       font-size: 40px;
       text-align: left;
       text-decoration: none;
       color: white; }
-      footer .social div a img {
+      .footer .social div a img {
         margin: 10px 0px;
         padding: 5px;
         width: 30px;
         text-align: center; }
-  footer div .footer-info {
+  .footer div .footer-info {
     margin-top: 10px;
     gap: 100px;
     width: 100%;
     display: flex;
     justify-content: space-around; }
-    footer div .footer-info ul h4 {
+    .footer div .footer-info ul h4 {
       margin-bottom: 10px;
       letter-spacing: 2px;
       color: white; }
-    footer div .footer-info ul a {
+    .footer div .footer-info ul a {
       text-decoration: none;
       color: white; }
-      footer div .footer-info ul a li {
+      .footer div .footer-info ul a li {
         padding: 8px;
         list-style: none; }
-        footer div .footer-info ul a li:hover {
+        .footer div .footer-info ul a li:hover {
           text-decoration: underline #4F8FD7;
           color: #4F8FD7; }
-  footer div .legal {
+  .footer div .legal {
     margin-top: 20px;
     text-align: center;
     letter-spacing: 2px;
